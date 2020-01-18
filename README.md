@@ -1,7 +1,7 @@
 # Problem Set 2: Getting Started with Java
 ## Due Friday, January 24, 11:59pm EST
 
-This problem will allow you to get more comfortable writing, compiling, and running code in Java. If you are new to Java, I am expecting you to write the code in Atom and to compile and run the code using the platformio-ide-terminal package within Atom or with cmd (Windows) or Terminal (Mac) outside of Atom.
+This problem will allow you to get more comfortable writing, compiling, and running code in Java. If you are new to Java, I am expecting you to write the code in Atom and to compile and run the code using the platformio-ide-terminal package within Atom or with cmd (Windows) or Terminal (Mac) outside of Atom. If you are a Windows user and run into a problem with using the command line, I strongly recommend going to TA lab hours, as both TAs this semester are experienced Windows users.
 
 ---
 
