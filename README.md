@@ -127,7 +127,7 @@ the program should print out
 
 You will need to use `System.out.format` and `args[0]`, as you did above.
 
-You will also need to figure out how to convert a string representation of an integer such as `"343"` to an actual `int` `343`. Take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there are any pre-defined static methods on `Integer` that might convert a string such as `"343"` to an integer `343`. (Hint: yes there is!)
+You will also need to figure out how to convert a string representation of an integer such as `"343"` to an actual `int` `343`. Take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there is a pre-defined static method on `Integer` that might convert a string such as `"343"` to an integer `343`. (Hint: yes there is!)
 
 Finally, you'll need to use the mathematical operator called modulus `%`. The modulus operator returns the remainder when dividing the first number by the second number. If `a % 2` is equal to 0, then `a` is an even number, because all even numbers are divisible by 2 (i.e., they give a remainder of 0 when divided by 2). Otherwise, `a` is odd.  
 
