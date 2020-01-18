@@ -143,7 +143,7 @@ For example, the call:
    would print:
 
    ```java
-   There are 4 command line arguments.
+   There are 5 command line arguments.
    There is at least one duplicate command line argument.
    ```
 
@@ -156,12 +156,12 @@ This call:
    would print:
 
    ```java
-   There are 4 command line arguments.
+   There are 3 command line arguments.
    There are no duplicate command line arguments.
    ```
 
 
-There are several possible ways to do this, but for this problem, I want you to (1) write a nested for-loop; (2) understand how to access elements in an array; and (3) understand how to compare String objects in Java. Refer to the class notes on these topics, look at the text book appendix on Java, or simply Google around a bit for information.
+There are several possible ways to do this, but for this problem, I want you to (1) write a nested for-loop; (2) understand how to access elements in an array; and (3) understand how to compare String objects in Java. Refer to the class notes on these topics, look at the textbook appendix on Java, or simply Google around a bit for information.
 
 ** Do not use `ArrayList` or `Arrays` for this problem!**
 
