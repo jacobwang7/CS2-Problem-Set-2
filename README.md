@@ -13,7 +13,7 @@ You have three options to clone the repository so that you have a local copy on 
 
 *OR*
 
-2. Use a terminal to issue ``git clone``, then move the repo to your course directory.
+2. Use a terminal to issue ``git clone``.
 
 *OR*
 
@@ -28,7 +28,7 @@ If you have a question about this problem set, post it to Slack. The reason for 
 
 1. Open your repository in Atom. If you cloned within Atom, it will probably already be open. If you cloned in another way, you can use `File-> Open`, and it's also likely that if you navigate to where you put the code, double clicking on the `.java` file you want to open will open it in Atom.
 
-2. Click on the `src`  folder in the tree structure on the left, then go to ``Packages -> platformio-ide-terminal -> New Terminal``. 
+2. Click on the `src` folder in the tree structure on the left, then go to ``Packages -> platformio-ide-terminal -> New Terminal``. 
 
 3. In the terminal, make sure you're in the `src` directory by typing `pwd`. If you're not, use the `cd` command (e.g., `cd src` or `cd ..` to navigate to the `src` directory. Then type the following by the blinking cursor in the terminal to compile the code in `PartOne.java`. **NOTE:** Everything up to and including the `$` is what the prompt looks like on my computer. It might look different on your computer, but it will probably end with `$`. You only need to type everything that comes **after** the `$` below.
 
@@ -127,33 +127,43 @@ the program should print out
 
 You will need to use `System.out.format` and `args[0]`, as you did above.
 
-You will also need to figure out how to convert a string representation of an integer such as `"343"` to an actual `int` `343`. Take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there are any pre-defined library functions that might convert a string such as `"343"` to an integer `343`. (Hint: yes there is!)
+You will also need to figure out how to convert a string representation of an integer such as `"343"` to an actual `int` `343`. Take a stroll through [the documentation for Java's built-in `Integer` class](https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html) to see if there are any pre-defined static methods on `Integer` that might convert a string such as `"343"` to an integer `343`. (Hint: yes there is!)
 
 Finally, you'll need to use the mathematical operator called modulus `%`. The modulus operator returns the remainder when dividing the first number by the second number. If `a % 2` is equal to 0, then `a` is an even number, because all even numbers are divisible by 2 (i.e., they give a remainder of 0 when divided by 2). Otherwise, `a` is odd.  
 
 ### Part 5 (3 points) 
-Now create a new file in `src` called `PartFive.java`. You will write a program that takes an integer `n` as a command line argument and then uses `n` to determine how many times to print the string:
+Now create a new file in `src` called `PartFive.java`. You will write a program that takes as many command line arguments as the user wants to provide, reports the number of arguments, and then reports whether there are any duplicate command line arguments.
+
+For example, the call:
 
    ```java
-   This does not spark joy.
+   [bash ps1]$ java PartFive dog cat table cat cat
    ```
 
-   For example, the call
+   would print:
 
    ```java
-   [bash ps1]$ java PartFive 4
+   There are 4 command line arguments.
+   There is at least one duplicate command line argument.
    ```
 
-   would print
+This call:
 
    ```java
-   This does not spark joy.
-   This does not spark joy.
-   This does not spark joy.
-   This does not spark joy.
+   [bash ps1]$ java PartFive dog cat table
    ```
 
-For this problem you'll need use wht you've learned so far and you'll have to figure out how to call the `System.out.println` function repeatedly. Refer to the class notes on for-loops in Java, look at the text book appendix on Java, or simply Google around a bit for information on Java for-loops, which are a bit different from `for` statements in Python (and probably Ocaml, too).
+   would print:
+
+   ```java
+   There are 4 command line arguments.
+   There are no duplicate command line arguments.
+   ```
+
+
+There are several possible ways to do this, but for this problem, I want you to (1) write a nested for-loop; (2) understand how to access elements in an array; and (3) understand how to compare String objects in Java. Refer to the class notes on these topics, look at the text book appendix on Java, or simply Google around a bit for information.
+
+** Do not use `ArrayList` or `Arrays` for this problem!**
 
 ---
 
