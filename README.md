@@ -183,3 +183,5 @@ As always, you can check to see if it worked by going to your account on GitHub 
 
 4. Comment your code! No points will be taken off this time, but absent or sparse comments will be penalized in future problem sets, so start getting in the habit now.
 
+5. No late submissions will be accepted.
+
